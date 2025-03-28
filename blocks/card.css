@@ -5,6 +5,7 @@
   justify-content: center;
   width: 300px;
   height: 300px;
+  overflow: hidden;
 }
 
 .card__image {

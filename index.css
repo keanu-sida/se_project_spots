@@ -1,12 +1,8 @@
 @import "./vendors/normalize.css";
+@import "./blocks/page.css";
 @import "./blocks/menubar.css";
 @import "./blocks/cards.css";
 @import "./blocks/card.css";
 @import "./blocks/header.css";
 @import "./blocks/footer.css";
-
-@media (max-width: 1200px) {
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+@import "./blocks/profile.css";
