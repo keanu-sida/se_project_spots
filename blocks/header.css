@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1280px;
   margin: 0 auto;
   border-bottom: 1px solid #21212140;
@@ -34,4 +34,23 @@
 
 .header__post-button:hover {
   background-color: #444;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .header__profile {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header__post-button {
+    width: 100%;
+    align-self: center;
+  }
 }
