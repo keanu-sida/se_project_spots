@@ -1,4 +1,68 @@
 .profile {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  height: 178px;
+}
+
+.profile-image {
+  width: 178px;
+  height: 178px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile__info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.profile__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  color: rgba(33, 33, 33, 0.6);
+}
+
+.profile__edit-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: rgba(33, 33, 33, 0.6);
+  transition: color 0.3s ease;
+}
+
+.profile__edit-button:hover {
+  color: #212121;
+}
+
+.profile__edit-button-image {
+  width: 16px;
+  height: 16px;
 }

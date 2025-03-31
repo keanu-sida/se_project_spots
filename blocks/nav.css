@@ -1,0 +1,19 @@
+.nav {
+  width: 100vw;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.nav__logo {
+  width: 94px;
+  height: 26px;
+}

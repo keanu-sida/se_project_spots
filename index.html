@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body class="page">
-    <header class="menubar">
-      <img class="menubar__logo" src="./images/logo.svg" alt="Spots logo" />
+    <header class="nav">
+      <img class="nav__logo" src="./images/logo.svg" alt="Spots logo" />
     </header>
     <section class="header">
       <div class="header__profile">
@@ -20,16 +20,20 @@
           src="images/avatar.jpg"
           alt="profile image"
         />
-        <h2 class="profile-title">Bessie Coleman</h2>
-        <h3 class="profile__subtitle">Civil Aviator</h3>
-        <button class="profile__edit-button">
-          <img
-            class="profile__edit-button-image"
-            src="images/edit-button.svg"
-            alt="edit button"
-          />
-          Edit profile
-        </button>
+        <div class="profile__info-container">
+          <div class="profile__info">
+            <h2 class="profile-title">Bessie Coleman</h2>
+            <h3 class="profile__subtitle">Civil Aviator</h3>
+          </div>
+          <button class="profile__edit-button">
+            <img
+              class="profile__edit-button-image"
+              src="images/edit-icon.png"
+              alt="edit button"
+            />
+            Edit profile
+          </button>
+        </div>
       </div>
       <button class="header__post-button">New Post</button>
     </section>
