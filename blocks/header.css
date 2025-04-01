@@ -21,7 +21,7 @@
   width: 149px;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   align-self: flex-end;
   transition: background-color 0.3s ease;
@@ -47,6 +47,8 @@
     height: auto;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
+    justify-content: center;
   }
 
   .header__post-button {
