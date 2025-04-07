@@ -3,9 +3,10 @@
   flex-direction: row;
   gap: 24px;
   width: 100%;
+  height: 178px;
 }
 
-.profile__image {
+.profile__avatar {
   width: 100%;
   max-width: 190px;
   border-radius: 8px;
@@ -14,7 +15,7 @@
   border-radius: 10px;
 }
 
-.profile__info-container {
+.profile__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,15 +92,39 @@
   opacity: 1;
 }
 
+.profile__post-button {
+  background-color: #212121;
+  color: #fff;
+  height: 52px;
+  width: 149px;
+  border: none;
+  margin-left: auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+}
+
+.profile__post-button:hover {
+  background-color: #444;
+}
+
 @media screen and (max-width: 768px) {
   .profile {
     flex-direction: column;
     gap: 16px;
     align-items: center;
     width: 100%;
+    height: auto;
   }
 
-  .profile__image {
+  .profile__avatar {
     max-width: none;
     width: 80px;
     height: 80px;
@@ -107,13 +132,12 @@
     display: block;
   }
 
-  .profile__info-container {
+  .profile__column {
     gap: 16px;
     align-items: center;
     width: 100%;
     min-width: 0;
-    display: flex;
-    flex-direction: column;
+    height: auto;
   }
 
   .profile__info {
@@ -121,8 +145,6 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
   .profile__title {
@@ -143,5 +165,10 @@
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .profile__post-button {
+    width: 100%;
+    align-self: center;
   }
 }
