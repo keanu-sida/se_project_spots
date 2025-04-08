@@ -33,10 +33,11 @@
   min-width: 0;
 }
 
-.card__checkbox {
+.card__button {
   width: 20px;
   height: 18px;
   margin: 0;
+  border: none;
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
@@ -46,11 +47,6 @@
   transition: opacity 0.3s ease;
 }
 
-.card__checkbox:hover {
+.card__button:hover {
   opacity: 1;
-}
-
-.card__checkbox:checked {
-  opacity: 1;
-  background-image: url(../images/like-icon.png);
 }
