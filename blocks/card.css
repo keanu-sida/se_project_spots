@@ -10,7 +10,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .card__info {
@@ -22,7 +22,7 @@
 
 .card__title {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -34,19 +34,32 @@
 }
 
 .card__button {
-  width: 20px;
-  height: 18px;
+  width: 23px;
+  height: 20px;
   margin: 0;
   border: none;
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
-  background: url(../images/like-icon.png) no-repeat center;
+  background: url(../images/State=Default.svg) no-repeat center;
   background-size: contain;
-  opacity: 0.4;
-  transition: opacity 0.3s ease;
 }
 
 .card__button:hover {
-  opacity: 1;
+  background: url(../images/State=Hover.svg) no-repeat center;
 }
+
+@media screen and (max-width: 627px) {
+  .card__title {
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #212121;
+  }
+  .card__button {
+    width: 20px;
+    height: 18px;
+  }
+  }
