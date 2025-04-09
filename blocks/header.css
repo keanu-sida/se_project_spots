@@ -1,16 +1,11 @@
 .header {
-  width: 100vw;
+  width: 100%;
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 .header__logo {
@@ -18,7 +13,7 @@
   height: 26px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     gap: 20px;
@@ -32,4 +27,4 @@
     align-items: center;
     justify-content: center;
   }
-}
+} */
