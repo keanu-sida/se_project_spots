@@ -41,7 +41,8 @@ The project utilizes:
 
 **Video Overview**
 
-_This section will contain a link to a Google Drive once I have had a round of corrections made on the project._
+To view a video presentation of this project, please visit the following link:
+https://www.loom.com/share/8c793da64b8243ffa70dee61e976e395?sid=fa9f4d4f-8787-4035-aea3-5fe61e571192
 
 **Deployment**
 
