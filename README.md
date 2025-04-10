@@ -43,5 +43,6 @@ The project utilizes:
 _This section will contain a link to a Google Drive once I have had a round of corrections made on the project._
 
 **Deployment**
+
 To see a live version of this project, go to:
 https://keanu-sida.github.io/se_project_spots/
