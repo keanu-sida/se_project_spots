@@ -5,6 +5,7 @@
 - Functionality
 - Technologies
 - Video Overview
+- Deployment
 
 **Functionality**
 
