@@ -1,0 +1,144 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  position: relative;
+  background-color: #fff;
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 32px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url(../images/modal-close.svg);
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.modal__close-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.modal__title {
+  margin: 0;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.modal__label {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0%;
+  color: #21212170;
+}
+
+.modal__input {
+  display: block;
+  padding: 16px 12px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  border: 1px solid #21212140;
+  border-radius: 8px;
+  margin: 8px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modal__input::placeholder {
+  color: #21212130;
+}
+
+.modal__input:hover {
+  border-color: #212121;
+}
+
+.modal__button {
+  max-width: 156px;
+  padding: 18px 32px;
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.modal__button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .modal__container {
+    padding: 12px;
+    margin: 10px;
+    max-width: calc(100% - 20px);
+  }
+
+  .modal__title {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .modal__input {
+    font-size: 16px;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal__button {
+    max-width: none;
+    width: 100%;
+  }
+}
