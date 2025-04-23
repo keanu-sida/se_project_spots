@@ -46,9 +46,9 @@
       <section class="cards">
         <div class="card">
           <img
-          class="card__image"
-          src="images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-          alt="photo looking out of a window to a snowy landscape"
+            class="card__image"
+            src="images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+            alt="photo looking out of a window to a snowy landscape"
           />
           <div class="card__info">
             <h3 class="card__title">Val Thorens</h3>
@@ -57,9 +57,9 @@
         </div>
         <div class="card">
           <img
-          class="card__image"
-          src="images/2-photo-by-ceiline-from-pexels.jpg"
-          alt="restaurant terrace"
+            class="card__image"
+            src="images/2-photo-by-ceiline-from-pexels.jpg"
+            alt="restaurant terrace"
           />
           <div class="card__info">
             <h3 class="card__title">Restaurant terrace</h3>
@@ -68,9 +68,9 @@
         </div>
         <div class="card">
           <img
-          class="card__image"
-          src="images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-          alt="photo of an outdoor cafe"
+            class="card__image"
+            src="images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+            alt="photo of an outdoor cafe"
           />
           <div class="card__info">
             <h3 class="card__title">An outdoor cafe</h3>
@@ -79,9 +79,9 @@
         </div>
         <div class="card">
           <img
-          class="card__image"
-          src="images/4-photo-by-maurice-laschet-from-pexels.jpg"
-          alt="long cable drawn bridge"
+            class="card__image"
+            src="images/4-photo-by-maurice-laschet-from-pexels.jpg"
+            alt="long cable drawn bridge"
           />
           <div class="card__info">
             <h3 class="card__title">A very long bridge, over the forest...</h3>
@@ -90,9 +90,9 @@
         </div>
         <div class="card">
           <img
-          class="card__image"
-          src="images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-          alt="japanese style tunnel with morning light"
+            class="card__image"
+            src="images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+            alt="japanese style tunnel with morning light"
           />
           <div class="card__info">
             <h3 class="card__title">Tunnel with morning light</h3>
@@ -101,9 +101,9 @@
         </div>
         <div class="card">
           <img
-          class="card__image"
-          src="images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-          alt="exterior of small snow covered log cabin"
+            class="card__image"
+            src="images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+            alt="exterior of small snow covered log cabin"
           />
           <div class="card__info">
             <h3 class="card__title">Mountain house</h3>
@@ -112,8 +112,64 @@
         </div>
       </section>
     </main>
-      <footer class="footer">
-        <p class="footer__text">&copy; 2025 Spots</p>
-      </footer>
-    </body>
-    </html>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2025 Spots</p>
+    </footer>
+    <div class="modal">
+      <div class="modal__container">
+        <button class="modal__close-button" type="button"></button>
+        <h2 class="modal__title">Edit profile</h2>
+        <form class="modal__form" name="profile-form">
+          <label class="modal__label" for="profile-name">
+            Name
+            <input
+              class="modal__input"
+              type="text"
+              id="profile-name"
+              name="profile-name"
+              placeholder="Type your name"
+            />
+          </label>
+          <label class="modal__label" for="profile-description">
+            Description
+            <input
+              class="modal__input"
+              id="profile-description"
+              name="profile-description"
+              placeholder="Type your description"
+            />
+          </label>
+          <button class="modal__button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal_is-opened">
+      <div class="modal__container">
+        <button class="modal__close-button" type="button"></button>
+        <h2 class="modal__title">New post</h2>
+        <form class="modal__form" name="image-form">
+          <label class="modal__label" for="image-link">
+            Image link
+            <input
+              class="modal__input"
+              type="text"
+              id="image-link"
+              name="image-link"
+              placeholder="Paste a link to the picture"
+            />
+          </label>
+          <label class="modal__label" for="image-description">
+            Caption
+            <input
+              class="modal__input"
+              id="image-description"
+              name="image-description"
+              placeholder="Type your caption"
+            />
+          </label>
+          <button class="modal__button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
