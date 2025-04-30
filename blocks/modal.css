@@ -19,7 +19,6 @@
 .modal_is-opened {
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s linear 0s, opacity 0.3s ease-in-out;
 }
 
 .modal__container {
@@ -30,14 +29,9 @@
   border-radius: 8px;
   padding: 32px 50px;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   gap: 32px;
-  transform: scale(0.95);
-  transition: transform 0.3s ease-in-out;
-}
-
-.modal_is-opened .modal__container {
-  transform: scale(1);
 }
 
 .modal__close-button {
@@ -63,7 +57,8 @@
 
 .modal__title {
   margin: 0;
-  font-family: Poppins;
+  color: #212121;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
@@ -78,23 +73,24 @@
 }
 
 .modal__label {
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
-  letter-spacing: 0%;
-  color: #21212170;
+  color: #212121;
+  opacity: 0.7;
 }
 
 .modal__input {
   display: block;
   padding: 16px 12px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0%;
-  border: 1px solid #21212140;
+  border: 1px solid #212121;
+  opacity: 0.7;
   border-radius: 8px;
   margin: 8px 0 0;
   width: 100%;
@@ -102,7 +98,8 @@
 }
 
 .modal__input::placeholder {
-  color: #21212130;
+  color: #212121;
+  opacity: 0.3;
 }
 
 .modal__input:hover {
@@ -116,7 +113,7 @@
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;

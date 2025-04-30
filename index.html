@@ -120,7 +120,7 @@
         <button class="modal__close-button" type="button"></button>
         <h2 class="modal__title">Edit profile</h2>
         <form class="modal__form" id="profile-form" name="profile-form">
-          <label class="modal__label" for="profile-title">
+          <label class="modal__label">
             Name
             <input
               class="modal__input"
@@ -128,15 +128,17 @@
               id="profile-title"
               name="profile-title"
               placeholder="Type your name"
+              required
             />
           </label>
-          <label class="modal__label" for="profile-subtitle">
+          <label class="modal__label">
             Description
             <input
               class="modal__input"
               id="profile-subtitle"
               name="profile-subtitle"
               placeholder="Type your description"
+              required
             />
           </label>
           <button class="modal__button" type="submit">Save</button>
@@ -148,7 +150,7 @@
         <button class="modal__close-button" type="button"></button>
         <h2 class="modal__title">New post</h2>
         <form class="modal__form" id="post-form" name="post-form">
-          <label class="modal__label" for="image-link">
+          <label class="modal__label">
             Image link
             <input
               class="modal__input"
@@ -156,15 +158,17 @@
               id="image-link"
               name="image-link"
               placeholder="Paste a link to the picture"
+              required
             />
           </label>
-          <label class="modal__label" for="image-description">
+          <label class="modal__label">
             Caption
             <input
               class="modal__input"
               id="image-description"
               name="image-description"
               placeholder="Type your caption"
+              required
             />
           </label>
           <button class="modal__button" type="submit">Save</button>
