@@ -19,6 +19,7 @@ const imageLinkInput = newPostModal.querySelector("#image-link");
 const imageDescriptionInput = newPostModal.querySelector("#image-description");
 
 editProfileModalButton.addEventListener("click", () => {
+  fillProfileForm();
   handleOpenProfileModal(editProfileModal);
 });
 
@@ -31,7 +32,7 @@ editProfileForm.addEventListener("submit", (evt) => {
 });
 
 newPostModalButton.addEventListener("click", () => {
-  handleOpenNewPostModal(newPostModal);
+  handleOpenModal(newPostModal);
 });
 
 newPostModalCloseButton.addEventListener("click", () => {
@@ -42,15 +43,12 @@ newPostForm.addEventListener("submit", (evt) => {
   handleSubmitNewPostForm(evt);
 });
 
-function handleOpenProfileModal(modal) {
+function fillProfileForm() {
   profileNameInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
-  modal.classList.add("modal_is-opened");
 }
 
-function handleOpenNewPostModal(modal) {
-  imageLinkInput.value = "Paste a link to the picture";
-  imageDescriptionInput.value = "Type your caption";
+function handleOpenModal(modal) {
   modal.classList.add("modal_is-opened");
 }
 
