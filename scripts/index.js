@@ -20,7 +20,7 @@ const imageDescriptionInput = newPostModal.querySelector("#image-description");
 
 editProfileModalButton.addEventListener("click", () => {
   fillProfileForm();
-  handleOpenProfileModal(editProfileModal);
+  handleOpenModal(editProfileModal);
 });
 
 editProfileModalCloseButton.addEventListener("click", () => {
