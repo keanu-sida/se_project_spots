@@ -18,28 +18,6 @@ const profileDescription = document.querySelector(".profile__subtitle");
 const imageLinkInput = newPostModal.querySelector("#image-link");
 const imageDescriptionInput = newPostModal.querySelector("#image-description");
 
-console.log("Script loaded");
-console.log("Edit Profile Modal:", editProfileModal);
-console.log("New Post Modal:", newPostModal);
-console.log("Edit Button:", editProfileModalButton);
-console.log("New Post Button:", newPostModalButton);
-console.log("Edit Form:", editProfileForm);
-console.log("New Post Form:", newPostForm);
-
-// Add error checking
-if (
-  !editProfileModal ||
-  !newPostModal ||
-  !editProfileModalButton ||
-  !newPostModalButton
-) {
-  console.error("Required modal elements not found");
-}
-
-if (!editProfileForm || !newPostForm) {
-  console.error("Required form elements not found");
-}
-
 editProfileModalButton.addEventListener("click", () => {
   handleOpenProfileModal(editProfileModal);
 });

@@ -88,8 +88,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 0%;
-  border: 1px solid #212121;
+  border: 1px solid #21212146;
   opacity: 0.7;
   border-radius: 8px;
   margin: 8px 0 0;
@@ -110,7 +109,7 @@
   max-width: 156px;
   padding: 18px 32px;
   background-color: #212121;
-  color: #fff;
+  color: #fcf5e5;
   border: none;
   border-radius: 8px;
   font-family: Poppins, Arial, sans-serif;
