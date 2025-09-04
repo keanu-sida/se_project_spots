@@ -49,11 +49,11 @@ const imageDescriptionInput = newPostModal.querySelector("#image-description");
 // Event listeners
 editProfileModalButton.addEventListener("click", () => {
   fillProfileForm();
-  handleOpenModal(editProfileModal);
+  openModal(editProfileModal);
 });
 
 editProfileModalCloseButton.addEventListener("click", () => {
-  handleCloseModal(editProfileModal);
+  closeModal(editProfileModal);
 });
 
 editProfileForm.addEventListener("submit", (evt) => {
@@ -61,11 +61,11 @@ editProfileForm.addEventListener("submit", (evt) => {
 });
 
 newPostModalButton.addEventListener("click", () => {
-  handleOpenModal(newPostModal);
+  openModal(newPostModal);
 });
 
 newPostModalCloseButton.addEventListener("click", () => {
-  handleCloseModal(newPostModal);
+  closeModal(newPostModal);
 });
 
 newPostForm.addEventListener("submit", (evt) => {
@@ -78,11 +78,11 @@ function fillProfileForm() {
   profileDescriptionInput.value = profileDescription.textContent;
 }
 
-function handleOpenModal(modal) {
+function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
 
-function handleCloseModal(modal) {
+function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 }
 
@@ -90,14 +90,14 @@ function handleSubmitProfileForm(evt) {
   evt.preventDefault();
   profileTitle.textContent = profileNameInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
-  handleCloseModal(editProfileModal);
+  closeModal(editProfileModal);
 }
 
 function handleSubmitNewPostForm(evt) {
   evt.preventDefault();
   console.log(imageLinkInput.value);
   console.log(imageDescriptionInput.value);
-  handleCloseModal(newPostModal);
+  closeModal(newPostModal);
 }
 
 initialCards.forEach((card) => {
